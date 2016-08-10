@@ -1,0 +1,65 @@
+%section.section.section--inverse.contacts#section-contacts
+  .container
+    %h3.text-center
+      Contattaci per maggiori informazioni
+
+    %h5.text-subtitle Richiedi ulteriori informazioni mediante il modulo sottostante.
+
+    %form#contacts-form.mc-form{action: 'https://formspree.io/dalpo85@gmail.com', method: 'post'}
+      %input{type: 'hidden', name: '_subject', value: 'Nuovo contatto dal sito'}
+      .row
+        .col-md-5.col-md-offset-1
+          %span.input.input--madoka
+            %input#first-name.input__field.input__field--madoka{ type: 'text', name: 'first_name' }
+            %label.input__label.input__label--madoka{for: 'first-name'}
+              %svg.graphic.graphic--madoka{height: '100%', preserveaspectratio: 'none', viewbox: '0 0 404 77', width: '100%'}
+                %path{d: 'm0,0l404,0l0,77l-404,0l0,-77z'}
+              %span.input__label-content.input__label-content--madoka
+                Nome
+                %abbr{ title: 'Obbligatorio' } *
+
+        .col-md-5
+          %span.input.input--madoka
+            %input#last-name.input__field.input__field--madoka{ type: 'text', name: 'last_name' }
+            %label.input__label.input__label--madoka{for: 'last-name'}
+              %svg.graphic.graphic--madoka{height: '100%', preserveaspectratio: 'none', viewbox: '0 0 404 77', width: '100%'}
+                %path{d: 'm0,0l404,0l0,77l-404,0l0,-77z'}
+              %span.input__label-content.input__label-content--madoka
+                Cognome
+                %abbr{ title: 'Obbligatorio' } *
+
+      .row
+        .col-md-5.col-md-offset-1
+          %span.input.input--madoka
+            %input#email.input__field.input__field--madoka{ type: 'email', name: 'email' }
+            %label.input__label.input__label--madoka{for: 'email'}
+              %svg.graphic.graphic--madoka{height: '100%', preserveaspectratio: 'none', viewbox: '0 0 404 77', width: '100%'}
+                %path{d: 'm0,0l404,0l0,77l-404,0l0,-77z'}
+              %span.input__label-content.input__label-content--madoka
+                Email
+                %abbr{ title: 'Obbligatorio' } *
+
+        .col-md-5
+          %span.input.input--madoka
+            %input#company.input__field.input__field--madoka{ type: 'text', name: 'company' }
+            %label.input__label.input__label--madoka{for: 'company'}
+              %svg.graphic.graphic--madoka{height: '100%', preserveaspectratio: 'none', viewbox: '0 0 404 77', width: '100%'}
+                %path{d: 'm0,0l404,0l0,77l-404,0l0,-77z'}
+              %span.input__label-content.input__label-content--madoka Azienda
+
+      .row
+        .col-md-10.col-md-offset-1
+          %span.input.input--madoka.input--textarea
+            %textarea#message.input__textarea.input__textarea--madoka{ name: 'message' }
+            %label.input__label.input__label--madoka{for: 'message'}
+              %svg.graphic.graphic--madoka{height: '100%', preserveaspectratio: 'none', viewbox: '0 0 404 77', width: '100%'}
+                %path{d: 'm0,0l404,0l0,77l-404,0l0,-77z'}
+              %span.input__label-content.input__label-content--madoka
+                Messaggio
+                %abbr{ title: 'Obbligatorio' } *
+
+      .row
+        .col-md-12.text-center
+          %button.btn.btn-lg.btn--submit{type: 'submit'}
+            %i.fa.fa-paper-plane.fa-fw
+            INVIA MODULO

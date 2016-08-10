@@ -1,0 +1,81 @@
+@import ../variables
+
+.hero
+  transition: all 0.35s ease-out
+  text-align: center
+  // background-color: transparent
+  // background-color: #fafcfe
+
+.hero__brand
+  position: relative
+  top: 5%
+
+  @media (min-width: $screen-sm-min)
+    top: 10%
+
+.hero__image
+  background: transparent image-url('45-eng-logo.png') 50% 50% no-repeat
+  background-size: contain
+  height: 220px
+  display: block
+  text-indent: -30000px
+  margin-bottom: 30px
+  max-width: 75%
+  margin-left: auto
+  margin-right: auto
+
+  @media (min-width: $screen-sm-min)
+    margin-bottom: 60px
+
+h2.hero__slogan
+  font-size: 20px
+
+  @media (min-width: $screen-sm-min)
+    font-size: 24px
+
+h3.hero__slogan
+  font-size: 18px
+  margin: 10px auto
+  font-weight: 200
+
+  @media (min-width: $screen-sm-min)
+    margin: 20px 30px
+    font-size: 20px
+
+.hero__arrow
+  z-index: 200
+  transition: none 0.25s linear
+  transition-property: color, opacity
+  position: absolute
+  bottom: 10px
+  font-size: 25px
+  display: block
+  color: $as-eng-primary-color
+  text-align: center
+  line-height: 40px
+  width: 40px
+  height: 40px
+  left: 50%
+  margin-left: -20px
+  opacity: 0.5
+  border: 3px solid $as-eng-primary-color
+  border-radius: 50%
+
+  @media (min-width: $screen-sm-min)
+    font-size: 50px
+    line-height: 70px
+    width: 70px
+    height: 70px
+    margin-left: -35px
+    bottom: 30px
+
+  // &.active
+  //   transition: color 1.25s linear
+  //   color: darken($as-eng-primary-color, 30%)
+  //   opacity: 1
+
+  &:hover, &:active, &:focus
+    transition: none 0.25s linear
+    transition-property: color, opacity
+    color: darken($as-eng-primary-color, 30%)
+    opacity: 1

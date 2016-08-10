@@ -1,0 +1,23 @@
+%nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#45eng-collapsable-menu", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+
+      %a.navbar-brand{href: '/'}
+        ENGINEERING
+
+    #45eng-collapsable-menu.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.scroll-to{href: "#section-contacts"} Contattaci
+
+        %li
+          %a.scroll-to{href: "#section-map"} Dove siamo
+
+        %li
+          %a.scroll-to{href: "#section-info"} Informazioni
