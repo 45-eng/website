@@ -18,7 +18,7 @@ gem 'font-awesome-sass', '~> 4.5.0'
 
 
 # Build optimization
-gem 'middleman-imageoptim', github: 'plasticine/middleman-imageoptim'
+# gem 'middleman-imageoptim', github: 'plasticine/middleman-imageoptim'
 gem 'uglifier'
 gem 'therubyracer'
 gem 'middleman-minify-html'

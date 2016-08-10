@@ -65,7 +65,7 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
 
   # Optional Settings
   deploy.remote   = 'git@github.com:45-eng/45-eng.github.io.git' # remote name or git url, default: origin
