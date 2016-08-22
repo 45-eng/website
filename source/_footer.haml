@@ -1,26 +1,73 @@
 %footer.footer#section-info
+  = image_tag '45-eng-white.png', class: 'footer__image'
+
+  .footer__info &nbsp;
+
   .container
-    = image_tag '45-eng-white.png', class: 'footer__image'
+    .row
+      .col-md-3
+        %h4.footer__title Contatti
 
-    .footer__info
-      %p
-        45 Engineering S.r.l. email: <a href="mailto:info@45-eng.com">info@45-eng.com</a>
-        %br
-        P.IVA 04395100235 Iscrizione al r.i. di Verona n.04395100235
-        %br
-        REA: VR-416560 Capitale sociale € 10.000 i.v.
+        %p.footer__paragraph
+          Email:
+          = link_to 'info@45-eng.com', 'mailto:info@45-eng.com'
+          %br
+          Tel: 0444.607561
+          %br
+          Fax: 045.5113077
 
-    .footer__social
-      %p Seguici sui canali social:
+      .col-md-3
+        %h4.footer__title Sede legale
 
-      %a{ href: '#facebook', target: '_blank' }
-        %i.fa.fa-fw.fa-lg.fa-facebook
+        %p.footer__paragraph
+          Indirizzo:
+          %br
+          Via Trento 1/b,
+          %br
+          37047 San Bonifacio
+          %br
+          (Verona)
 
-      %a{ href: '#twitter', target: '_blank' }
-        %i.fa.fa-fw.fa-lg.fa-twitter
+      .col-md-3
+        %h4.footer__title Sede operativa
 
-      %a{ href: '#instagram', target: '_blank' }
-        %i.fa.fa-fw.fa-lg.fa-instagram
+        %p.footer__paragraph
+          Indirizzo:
+          %br
+          Corte delle filande 16,
+          %br
+          36075 Montecchio Maggiore
+          %br
+          (Vicenza)
 
-      %a{ href: '#pinterest', target: '_blank' }
-        %i.fa.fa-fw.fa-lg.fa-pinterest-p
+      .col-md-3
+        %h4.footer__title Progetti
+
+        = link_to 'https://hpp-design.com/', target: '_blank' do
+          = image_tag 'hpp-design-logo.png', class: 'img-responsive footer__hppdesign'
+
+  .footer__info &nbsp;
+
+  .text-center
+    %h5 45 Engineering società unipersonale S.r.l.
+
+    P.IVA 04395100235 Iscrizione al r.i. di Verona n.04395100235
+    %br
+    REA: VR-416560 Capitale sociale € 10.000 i.v.
+
+  .footer__info &nbsp;
+
+  .footer__social
+    %h5 Seguici sui canali social:
+
+    %a{ href: '#facebook', target: '_blank' }
+      %i.fa.fa-fw.fa-lg.fa-facebook
+
+    %a{ href: '#twitter', target: '_blank' }
+      %i.fa.fa-fw.fa-lg.fa-twitter
+
+    %a{ href: '#instagram', target: '_blank' }
+      %i.fa.fa-fw.fa-lg.fa-instagram
+
+    %a{ href: '#pinterest', target: '_blank' }
+      %i.fa.fa-fw.fa-lg.fa-pinterest-p
