@@ -32,7 +32,6 @@
 
   %body{class: page_classes}
     = yield
-    -# = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"
 
     :javascript
@@ -41,5 +40,5 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', '', 'auto');
+      ga('create', 'UA-67561288-4', 'auto');
       ga('send', 'pageview');
