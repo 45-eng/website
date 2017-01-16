@@ -7,6 +7,8 @@
 
     %form#contacts-form.mc-form{action: 'https://formspree.io/info@45-eng.com', method: 'post'}
       %input{type: 'hidden', name: '_subject', value: 'Nuovo contatto dal sito'}
+      %input{type: 'text', name: '_gotcha', style: 'display:none'}
+
       .row
         .col-md-5.col-md-offset-1
           %span.input.input--madoka
