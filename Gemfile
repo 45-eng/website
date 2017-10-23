@@ -6,12 +6,12 @@ source "https://rubygems.org"
 # gem "wdm", "~> 0.1.0", platforms: [:mswin, :mingw]
 # gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
-gem "middleman", "~> 4.0"
+gem "middleman", "~> 4.1.10"
 gem "middleman-autoprefixer", "~> 2.6"
 gem "middleman-deploy", "= 2.0.0.pre.alpha"
 gem "middleman-livereload", "~> 3.4"
 gem "middleman-sprockets", "~> 4.0.0"
-gem "sassc", "~> 1.8"
+gem "sassc", "~> 1.10.0"
 
 gem 'bootstrap-sass', '~> 3.3.6', require: false
 gem 'font-awesome-sass', '~> 4.5.0'
@@ -20,6 +20,7 @@ gem 'font-awesome-sass', '~> 4.5.0'
 # Build optimization
 # gem 'middleman-imageoptim', github: 'plasticine/middleman-imageoptim'
 gem 'uglifier'
-gem 'therubyracer'
+# gem 'therubyracer'
+gem 'mini_racer'
 gem 'middleman-minify-html'
 gem 'middleman-dotenv', '~> 2.0'
